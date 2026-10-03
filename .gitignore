@@ -16,3 +16,33 @@ obj/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Frontend (React / Vite)
+node_modules/
+dist/
+.vite/
+*.log
+.env
+.env.local
+
+# Backend (.NET)
+bin/
+obj/
+.vs/
+*.user
+*.suo
+launchSettings.json
+
+# Secrets and local config
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Packaged files
+*.zip
