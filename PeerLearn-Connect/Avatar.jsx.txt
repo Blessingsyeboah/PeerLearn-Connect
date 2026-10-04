@@ -1,6 +1,0 @@
-import { gradientFor } from '../utils';
-
-export default function Avatar({ name }) {
-  const initials = name.split(' ').map((w) => w[0]).slice(0, 2).join('');
-  return <div className="av" style={{ background: `linear-gradient(135deg,${gradientFor(name)})` }}>{initials}</div>;
-}
