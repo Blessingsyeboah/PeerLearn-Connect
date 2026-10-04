@@ -52,6 +52,13 @@ var app = builder.Build();
 app.UseCors("web");
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapControllers();
 app.MapHub<ChatHub>("/hubs/chat");
+
+app.MapFallbackToFile("index.html");
+
 app.Run();
