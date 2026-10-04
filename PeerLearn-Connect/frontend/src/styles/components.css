@@ -1,0 +1,41 @@
+.btn{background:var(--grad);color:#fff;border-radius:14px;padding:10px 18px;font-weight:600;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 18px -8px #e93d9a}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:var(--surface);color:var(--ink);box-shadow:none;border:1px solid var(--line)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.chip{padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--mute);transition:.2s;font-weight:500}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.row{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:14px}
+.row h2{font-size:24px}
+select{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:8px 12px;font:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--sh);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px)}
+.tutor{display:flex;flex-direction:column;gap:12px}
+.av{width:52px;height:52px;border-radius:18px 18px 18px 6px;display:grid;place-items:center;color:#fff;font:700 18px 'Bricolage Grotesque';flex:none}
+.top{display:flex;gap:12px;align-items:center}
+.top h3{font-size:18px}
+.sub{color:var(--mute);font-size:13px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;padding:3px 10px;border-radius:99px;background:color-mix(in srgb,var(--v) 12%,transparent);color:var(--v);font-weight:600}
+.meta{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--mute);margin-top:auto}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--m);margin-right:6px;box-shadow:0 0 0 4px color-mix(in srgb,var(--m) 25%,transparent)}
+.stars{color:var(--o);letter-spacing:2px}
+.empty{padding:40px;text-align:center;color:var(--mute);border:2px dashed var(--line);border-radius:22px;grid-column:1/-1}
+.mini{padding:6px 12px;border-radius:10px;font-weight:600;font-size:13px}
+.ok{background:var(--m);color:#fff}.no{background:var(--line)}
+
+/* booking dialog */
+dialog{border:0;border-radius:26px;padding:0;width:min(440px,92vw);background:var(--surface);color:var(--ink);box-shadow:0 30px 80px -20px rgba(40,10,100,.5)}
+dialog::backdrop{background:rgba(20,10,40,.55);backdrop-filter:blur(4px)}
+dialog[open]{animation:pop .35s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes pop{from{opacity:0;transform:scale(.92) translateY(16px)}}
+.mh{padding:22px;background:var(--grad);color:#fff}
+.mb{padding:22px;display:grid;gap:14px}
+.actions{display:flex;gap:8px;justify-content:flex-end}
+.days,.slots{display:flex;gap:8px;flex-wrap:wrap}
+.pick{padding:8px 14px;border-radius:14px;border:1px solid var(--line);background:var(--bg);font-weight:500;transition:.2s}
+.pick[aria-pressed=true]{background:var(--grad);color:#fff;border-color:transparent}
+.pick:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+
+.row2{display:flex;gap:8px}.row2 .btn{flex:1;padding:10px 12px}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
